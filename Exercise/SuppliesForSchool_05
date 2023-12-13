@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class SuppliesforSchool_05 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int pens = Integer.parseInt(scanner.nextLine());
+        int pencils = Integer.parseInt(scanner.nextLine());
+        int l = Integer.parseInt(scanner.nextLine());
+        int percent = Integer.parseInt(scanner.nextLine());
+
+        double pPens = 5.80 ;
+        double pPencils = 7.20 ;
+        double pL = 1.20 ;
+
+        double total = (pens * pPens) + (pencils * pPencils) + (l * pL);
+        double discount = total*percent/100;
+        double sum = total-discount;
+
+        System.out.println(sum);
+
+    }
+}
