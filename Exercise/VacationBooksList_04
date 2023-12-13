@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class VacationBooksList_04 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int pagesCurrentBook = Integer.parseInt(scanner.nextLine());
+        int pagesOneHour = Integer.parseInt(scanner.nextLine());
+        int days = Integer.parseInt(scanner.nextLine());
+
+        //1.	Брой страници в текущата книга - 212
+        //2.	Страници, които прочита за 1 час - 20
+        //3.	Броят на дните, за които трябва да прочете книгата - 2
+
+        int hoursForBook = pagesCurrentBook/pagesOneHour;
+        int daysF = hoursForBook/days;
+
+        System.out.println(daysF);
+
+    }
+}
