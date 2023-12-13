@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class BasketballEquipment_08 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int fee = Integer.parseInt(scanner.nextLine());
+
+        double shoes = fee-(fee*0.4);
+        double apparel = shoes-(shoes*0.2);
+        double ball = apparel/4;
+        double acc = ball/5;
+
+        double total = (fee+shoes+apparel+ball+acc);
+
+        System.out.println(total);
+
+    }
+}
