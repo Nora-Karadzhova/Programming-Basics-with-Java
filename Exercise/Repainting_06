@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Repainting_06 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int nylon = Integer.parseInt(scanner.nextLine());
+        int paint = Integer.parseInt(scanner.nextLine());
+        int thinner = Integer.parseInt(scanner.nextLine());
+        int hours = Integer.parseInt(scanner.nextLine());
+
+        double pNylon = 1.50;
+        double pPaint = 14.50;
+        double pThinner = 5.00;
+
+        double sNylon = (nylon + 2) * pNylon;
+        double sPaint = (paint + (paint * 10)/100.0) * pPaint;
+        double sThinner = thinner*pThinner;
+        double bag = 0.40;
+        double oneHour = (sNylon + sPaint + sThinner + bag)*30/100.0;
+        double work = hours*oneHour;
+
+        System.out.println(sNylon + sPaint + sThinner + work + bag);
+
+
+    }
+}
