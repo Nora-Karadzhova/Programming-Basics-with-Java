@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class YardGreening_09 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double areasm = Double.parseDouble(scanner.nextLine());
+
+        double onesm = 7.61;
+        double discount = 0.18;
+
+        double price = areasm*onesm;
+        double discprice = price*discount;
+        double finaleprice = price - discprice;
+
+        System.out.println("The final price is:" + finaleprice + " lv.");
+        System.out.printf("The discount is: %.2f lv.", discprice);
+    }
+}
