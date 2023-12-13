@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class USDToBGN_01 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        double usd = Double.parseDouble(scanner.nextLine());
+        double oneusd = 1.79549;
+        double result = usd*oneusd;
+
+        System.out.println(result);
+    }
+}
