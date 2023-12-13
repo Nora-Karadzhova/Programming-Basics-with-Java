@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class PetShop_08 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int packDogs = Integer.parseInt(scanner.nextLine());
+        int packCats = Integer.parseInt(scanner.nextLine());
+
+        double pricefd = 2.50;
+        int pricefc = 4;
+
+        double finalePrice = packDogs*pricefd+packCats*pricefc;
+
+        System.out.printf(finalePrice + " lv.");
+    }
+}
